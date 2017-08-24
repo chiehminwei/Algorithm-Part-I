@@ -1,0 +1,54 @@
+1.1 /Users/Jimmy
+
+1.2 -a      Include directory entries whose names begin with a dot (.).
+
+1.3 -l      (The lowercase letter ``ell''.)  List in long format.  (See
+             below.)  If the output is to a terminal, a total sum for all the
+             file sizes is output on a line before the long listing.
+
+1.4 -t      Sort by time modified (most recently modified first) before sort-
+             ing the operands by lexicographical order.
+
+1.5 -r      Reverse the order of the sort to get reverse lexicographical
+             order or the oldest entries first (or largest files last, if com-
+             bined with sort by size
+
+1.6 -S      Sort files by size
+
+1.7 
+total 0
+drwxr-xr-x  4 Jimmy  staff  136 Aug 23 01:29 src
+
+csci205/src:
+total 0
+drwxr-xr-x  3 Jimmy  staff  102 Aug 23 01:34 lab01
+
+csci205/src/lab01:
+total 8
+-rw-r--r--  1 Jimmy  staff  639 Aug 23 17:25 answers.txt
+
+======================================================================================
+2.1 Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
+
+
+2.2 
+Local Version Control Systems: the most simple approach although also the most error prone. Can be useful when internet access is limited.
+
+Centralized Version Control Systems: Administrators have fine-grained control over who can do what. Can be useful when working in a team environment.
+
+Distributed Version Control Systems: Clients fully mirror the whole repository. Every clone is a full backup of all the data. Useful for setting up several types of workflows that aren’t possible in centralized systems, such as hierarchical models.
+
+
+2.3 Git is the Distributed Version Control System.
+
+2.4 This means that generally no information is needed from another computer on your network. One advantage is that most Git operations have no network latency overhead. Because you have the entire history of the project right there on your local disk, most operations seem almost instantaneous.
+
+Second advantage is that you can still do most of the things you want to do if you are offline or not connected to a VPN.
+
+2.5 Git stores everything in its database not by file name but by the hash value (SHA - 1)
+ of its contents.
+
+2.6
+Committed means that the data is already stored in the local database.
+Modified means you have changed the data, but it is not stored in the database yet, and it is also not staged yet.
+Staged means a file has been modified and added to the staging area; it will go into the next commit.
