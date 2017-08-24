@@ -17,11 +17,11 @@ package lab01;
 public class Hello
 {
 	public static void main( String[] args ){
-		long t_start = System.nanoTime();
+		long startTime = System.nanoTime();
 		System.out.println("Programming is not a spectator sport!");
-		long t_end = System.nanoTime();
-		long time_elapsed = t_end - t_start;
-		System.out.println("Time to execute: " + time_elapsed + " ns");
+		long estimatedTime = System.nanoTime() - startTime;
+		double estimatedTimeInMs = (double) estimatedTime / 1000000.0;
+		System.out.println("Time to execute: " + estimatedTimeInMs + " Ms");
 		System.exit(0);
 	}
 }
