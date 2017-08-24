@@ -1,3 +1,18 @@
+/* *****************************************
+* CSCI205 - Software Engineering and Design
+* Spring 2017
+* Instructor: Your instructor
+* Section: List time of your lecture
+*
+* Name: Jimmy Wei
+* Date: 08/23/2017
+*
+* Lab / Assignment: Lab 01
+*
+* Description: First Java Program
+*
+* *****************************************/
+
 1.1 /Users/Jimmy
 
 1.2 -a      Include directory entries whose names begin with a dot (.).
@@ -52,3 +67,32 @@ Second advantage is that you can still do most of the things you want to do if y
 Committed means that the data is already stored in the local database.
 Modified means you have changed the data, but it is not stored in the database yet, and it is also not staged yet.
 Staged means a file has been modified and added to the staging area; it will go into the next commit.
+
+======================================================================================
+
+3.1 Bytecodes is what's contain in a .class file, the machine language of the Java Virtual Machine. In the Java programming language, all source code is first written in plain text files ending with the .java extension. Those source files are then compiled into .class files by the javac compiler. 
+
+3.2 One benefit is that JVM is a platform-independent environment, so the same code can be used to run on different machines (high portability) without the need to re-write code for each different hardware.
+
+3.3 The downside to using a virtual machine as opposed to native code is that it cannot run as fast as native code due to time needed to first compile the source code into virtual machine code. This can cause some performance tradeoffs.
+
+3.4 I do not believe everything I just read. This document claims that by using Java I can "write less code", but this is not true compared to Python. Python has a lot less overhead and a much simpler syntax, so it is arguably "less code" than Java.
+
+3.5
+/* text */
+The compiler ignores everything from /* to */. Multi-line comments.
+/** documentation */
+This indicates a documentation comment (doc comment, for short). The compiler ignores this kind of comment, just like it ignores comments that use /* and */. The javadoc tool uses doc comments when preparing automatically generated documentation. For more information on javadoc, see the Javadoc™ tool documentation . Multi-line comments.
+// text
+The compiler ignores everything from // to the end of the line. Single-line comments.
+
+3.6 If I'm working in a terminal, I must run the command javac to compile .java file:
+javac path-to-file/file.java
+And then I can use the command java to run the generated .class file:
+java path-to-file/file
+
+======================================================================================
+
+4.1 Prints an Object and then terminate the line. This method calls at first String.valueOf(x) to get the printed object's string value, then behaves as though it invokes print(String) and then println().
+
+4.2 The object "in" represents the "standard" input string, and it is an object of type InputStream.
