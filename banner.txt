@@ -1,0 +1,15 @@
+/* *****************************************
+* CSCI205 - Software Engineering and Design
+* Spring 2017
+* Instructor: Your instructor
+* Section: List time of your lecture
+*
+* Name: Jimmy Wei
+* Date: 08/23/2017
+*
+* Lab / Assignment: Lab 01
+*
+* Description: First Java Program
+*
+* *****************************************/
+
