@@ -96,3 +96,30 @@ java path-to-file/file
 4.1 Prints an Object and then terminate the line. This method calls at first String.valueOf(x) to get the printed object's string value, then behaves as though it invokes print(String) and then println().
 
 4.2 The object "in" represents the "standard" input string, and it is an object of type InputStream.
+
+======================================================================================
+
+5.1 The resuls was 1 instead of 1.5 because java is carrying out integer division and truncating the result after the decimal point.
+
+5.2 The output is 1.0. This is because 30 / 20 is first evaluated to 1 and then assigned the type double, so it gets converted to 1.0
+
+======================================================================================
+
+6.1 The args variable gives a name to the input to the main method. If we want to access the input within the main method we can invoke the name "args".
+
+6.2 void means that the method does not return anything.
+
+6.3  Identifiers are the names of variables, methods, classes, packages and interfaces. 
+The rules and conventions for naming your variables can be summarized as follows: Variable names are case-sensitive. A variable's name can be any legal identifier — an unlimited-length sequence of Unicode letters and digits, beginning with a letter, the dollar sign " $ ", or the underscore character " _ ".
+
+6.4 a "keyword" specifies the type of what is returned by a method.
+
+6.5 a float and a double are similar in that they both represent non-integer numbers. The difference is that float guarantees 7 digit precision while double guarantees 14 digit precision.
+
+6.6 byte, short, int, long all represent integers in Java. The difference is that byte is 8-bit, short is 16-bit, int is 32-bit, and long is 64-bit. So they have different range and size.
+
+6.7 String is not a primitive type in Java. It is an object.
+
+6.8 String name = "Jimmy Wei";
+
+6.9 The scope of a variable defines the section of the code in which the variable is accesible. When we say scope we mean global (accessible outside of a method), local (accessible within the method), etc.
