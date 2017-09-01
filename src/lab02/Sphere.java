@@ -10,8 +10,7 @@
  * @author Brian King, 2017-Spring
  *
  * Description:
- * A simple program to ask the user for a temperature in F, and converts it to
- * Celsius.
+ * A simple program to calculate volume of a sphere.
  * *****************************************
  */
 package lab02;
@@ -20,15 +19,19 @@ import java.util.Scanner;
 // import java.lang.Math;
 
 public class Sphere {
-	public static void main(String[] args) {
+	private double radius;
 
-        // Prompt user for the radius of the sphere
+	public Sphere() {
+		// Prompt user for the radius of the sphere
 		System.out.print("Enter the radius of the sphere: ");
         // Create the Scanner object, attached to console input
 		Scanner in = new Scanner(System.in);
        	// Read and store the radius
-		double radius = in.nextDouble();
-        // Compute the volume of the sphere
+		radius = in.nextDouble();
+	}
+
+	public void computeVolume() {
+		// Compute the volume of the sphere
 		double volume = 4.0 / 3.0 * Math.PI * Math.pow(radius, 3);
 		int roundedVolume = (int) Math.round(volume);
         // Display the result
@@ -36,5 +39,10 @@ public class Sphere {
 			"The volume is: %.2f%n" + 
 			"Roundned to nearest integer: %d%n", 
 			volume, roundedVolume);
+	}
+
+	public static void main(String[] args) {
+		Sphere sphere = new Sphere();
+		sphere.computeVolume();        
 	}
 }
